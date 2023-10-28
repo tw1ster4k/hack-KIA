@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
+
+
+.Header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Header-Title{
+    color: #fffdfd;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Header-Link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-family: "Roboto", sans-serif;
+    color: #fffdfd;
+}
+
+.Header-Reg{
+    width: 180px;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid #fffdfd;
+    background-color: #0d13a6;
+    color: #fffdfd;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+}
+
+.Header-LogIn{
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid #fffdfd;
+    background-color: #0d13a6;
+    color: #fffdfd;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+}

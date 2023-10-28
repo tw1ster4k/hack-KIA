@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
+
+.Footer{
+    
+    background-color: #010333;
+
+}
+
+.Footer-Title{
+    position: relative;
+    top: 20px;
+    color: #fffdfd;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.13px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 204px;
+
+}
+
+.Footer-Nav{
+    position: relative;
+    top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.Footer-Link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-family: "Roboto", sans-serif;
+    color: #fffdfd;
+}
+
+.Footer-Form{
+    width: 695px;
+    height: 283px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Footer-Button{
+    background-color: #0d13a6;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    width: 100px;
+}
+
+.Footer-Other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 283px;
+    margin-left: 204px;
+    margin-top: -280px;
+}

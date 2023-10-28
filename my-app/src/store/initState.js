@@ -89,10 +89,32 @@ export const initState = {
         number:"888005553535",
         email:"mail@mail.ru",
         organization:"МБОУ ССОШ №1"   
-    }
-    
-       
+    }   
 ],
+
+tests:[
+    {name:"Математические вопросы",
+    questions:[
+        {question:"2+2",
+            answer:"4"
+        },
+        {question:"2 + 2 * 2",
+        answer:"6"
+        },
+        {question:"x-5 = 0. Найдите x ",
+        answer:"5"
+        },
+        {question:"x * (x - 10) = 0. В ответе запишите меньший из корней",
+        answer:"0"
+        }
+    ]
+    }
+],
+
+test:{
+
+}
+
 
 }
 
@@ -100,6 +122,8 @@ export const reducers = (state = initState, action) => {
     switch (action.type) {
         case "LOG_USER" :
             return {...state, user: action.payload}
+        case "ONE_TEST" :
+            return {...state, test: action.payload}
         default :
         return state;
     }

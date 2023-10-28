@@ -7,6 +7,7 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Cabinet from './components/Cabinet/Cabinet';
+import Registration from './components/Registration/Registration';
 
 function App() {
   const cnApp = cn("App")
@@ -17,6 +18,7 @@ function App() {
         <Route element={<Main />} path='/' />
         <Route element={<Login />} path='/login' />
         <Route element={<Cabinet />} path='/lk' />
+        <Route element={<Registration />} path='/reg' />
       </Routes>
       <Footer />
     </div>

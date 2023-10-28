@@ -17,6 +17,7 @@ const Header = () => {
         <Link to={"/"} className={cnHeader("Link")}>Тарифы</Link>
         <Link to={"/"} className={cnHeader("Link")}>Внедрение</Link>
         <Link to={"/"} className={cnHeader("Link")}>Поддержка</Link>
+        <Link to={"/"} className={cnHeader("Link")}>Тесты</Link>
         { 
         navItems.map((el, index)  =>
           <Link key={index} to={el.link}><button className={cnHeader(el.link === "/login" ? "LogIn" : "Reg")}>{el.name}</button></Link>

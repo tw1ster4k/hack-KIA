@@ -1,0 +1,55 @@
+.Cabinet{
+margin-top: 20px;
+}
+
+.Cabinet-Info{
+    background-color: #fff;
+    width: 660px;
+    height: 400px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.Cabinet-Info-Item{
+    width: 340px;
+    height: 80px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cabinet-Navigation{
+    position: absolute;
+    height: 240px;
+    width: 180px;
+    background-color: #fff;
+    top: 50px;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Cabinet-Link{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.Cabinet-Average{
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    background-color: #f2f2f2;
+    top: 15%;
+    right: 42.5%;
+    border-radius: 25px;
+}

@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
+import Cabinet from './components/Cabinet/Cabinet';
 
 function App() {
   const cnApp = cn("App")
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route element={<Main />} path='/' />
         <Route element={<Login />} path='/login' />
+        <Route element={<Cabinet />} path='/lk' />
       </Routes>
       <Footer />
     </div>

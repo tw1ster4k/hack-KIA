@@ -20,14 +20,14 @@ const Login = () => {
     const handlerSubmitUser = () =>  {
         for(let i = 0; i < state.length; i++){
             if(login === state[i].login && password === state[i].password) {
-                dispatch({type: "LOG_USER", payload:{login:login, password:password, role:state[i].role}})
+                dispatch({type: "LOG_USER", payload:state[i]})
                  navigate('/')
                  alert("Вы вошли!")
                  return null;
-            }else{
-                alert("Неправильный пароль или логин")
+                }
             }
-        }
+                alert("Неправильный пароль или логин")
+                return null;
     }
 
     const cnLogin = cn("Login")

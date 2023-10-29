@@ -3,6 +3,7 @@ import { cn } from '@bem-react/classname'
 import { Link } from 'react-router-dom'
 import "./Header.css"
 import { useSelector } from 'react-redux'
+import Logo from "../../imgs/Logo.png"
 
 const Header = () => {
   //@ts-ignore
@@ -12,7 +13,7 @@ const Header = () => {
     const navItems = state.login ? [{link:"/lk", name:"Личный кабинет"}] : [{link:'/reg', name:"Зарегистрироваться"}, {link:"/login", name:"Вход"}]
   return (
     <div className={cnHeader()}>
-        <text className={cnHeader("Title")}>ПрофТестиум</text>
+        <img className={cnHeader("Title")} src={Logo} />
         <Link to={"/"} className={cnHeader("Link")}>Возможности</Link>
         <Link to={"/"} className={cnHeader("Link")}>Тарифы</Link>
         <Link to={"/"} className={cnHeader("Link")}>Внедрение</Link>

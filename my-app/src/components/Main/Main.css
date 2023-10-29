@@ -13,9 +13,9 @@
 }
 
 .Main-H1{
-    color: black;
+    color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 64px;
+    font-size: 34px;
     line-height: 75px;
     font-weight: 600;
 }
@@ -23,7 +23,7 @@
 .Main-desc{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 46.88px;
     color: #d9d9d9;
 }

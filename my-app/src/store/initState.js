@@ -106,13 +106,16 @@ tests:[
         },
         {question:"x * (x - 10) = 0. В ответе запишите меньший из корней",
         answer:"0"
-        }
-    ]
+        },
+    ],
     }
 ],
 
-test:{
+scores:[
+],
 
+test:{
+    
 }
 
 
@@ -124,6 +127,10 @@ export const reducers = (state = initState, action) => {
             return {...state, user: action.payload}
         case "ONE_TEST" :
             return {...state, test: action.payload}
+        case "ADD_SCORE" :
+             const newScore = action.payload 
+             const scores = [...state.scores, newScore];
+             return {...state, scores: scores}  
         default :
         return state;
     }

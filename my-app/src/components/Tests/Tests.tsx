@@ -9,6 +9,8 @@ const Tests = () => {
     const dispatch = useDispatch()
     //@ts-ignore
     const state = useSelector((state) => state.tests)
+    //@ts-ignore
+    const scores = useSelector((state) => state.scores)
 
     const OneTest = (name: string) => {
             //@ts-ignore
@@ -24,6 +26,13 @@ const Tests = () => {
             state.map((el, index) => 
                 <div key={index} className={cnTests("Test")} >
                     <h3 className={cnTests("Test-Title")}>{el.name}</h3>
+                    <text>
+                        {scores.length > 0 ?
+                        `${el.name === scores[index].name ? scores[index].score : 0} из ${el.questions.length}`
+                        :
+                        ""
+                    }
+                        </text>
                     <Link to={"/tests/" + index} >
                         <button onClick={() => OneTest(el.name)} className={cnTests("Test-Button")} >Пройти</button>
                     </Link>

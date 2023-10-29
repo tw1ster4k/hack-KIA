@@ -10,8 +10,11 @@ const Main = () => {
   return (
     <div className={cnMain()}>
         <div className={cnMain("Ad")}>
-            <h1 className={cnMain("H1")}>Рекламный пост</h1>
-            <text className={cnMain("desc")}>с описанием проекта и функциональными возможностями системы </text>
+            <h1 className={cnMain("H1")}>Возможность получить новую профессию легко и просто</h1>
+            <text className={cnMain("desc")}>персональная онлайн-статистика обучения,
+автоматическая проверка заданий, 
+наглядная динамика,
+легкая управляемость процессом</text>
         </div>
         <img src={Plumber} className={cnMain("Img")}  />
 

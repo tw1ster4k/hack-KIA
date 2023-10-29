@@ -2,12 +2,13 @@ import React from 'react'
 import { cn } from '@bem-react/classname'
 import { Link } from 'react-router-dom'
 import './Footer.css'
+import Logo from "../../imgs/Logo.png"
 
 const Footer = () => {
     const cnFooter = cn("Footer")
   return (
     <footer className={cnFooter()} >
-        <text className={cnFooter("Title")}>ПрофТестиум</text>
+        <img src={Logo} className={cnFooter("Title")} />
         <div className={cnFooter("Nav")}>
         <Link to={"/"} className={cnFooter("Link")}>Возможности</Link>
         <Link to={"/"} className={cnFooter("Link")}>Тарифы</Link>

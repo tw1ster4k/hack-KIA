@@ -2,14 +2,13 @@
 
 .Main{
     background: linear-gradient(#000af3, #02065FC2 , #000459 );
-    min-height: 800px;
 }
 
 .Main-Ad{
     margin-top: 119px;
     width: 612px;
     height: 326px;
-    margin-left: 85px;
+    margin-left: 10%;
 }
 
 .Main-H1{
@@ -31,13 +30,13 @@
 .Main-Img{
     position: absolute;
     top: 175px;
-    left: 700px;
+    left: 50%;
     width: 555px;
     border-radius: 20px;
 }
 
 .Main-Reg{
-    margin-left: 85px;
+    margin-left: 10%;
     margin-top: 100px;
 }
 
@@ -65,3 +64,35 @@
     color: #fff;
 }
 
+.Main-PreFooter{
+    width: 80%;
+    height: 170px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Main-PreFooter-Title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+    color: #0d13a6;
+}
+
+.Main-PreFooter-Desc{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.75px;
+    width: 114px;
+}
+
+.Main-PreFooter-Block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

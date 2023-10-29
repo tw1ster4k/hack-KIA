@@ -93,54 +93,6 @@ export const initState = {
 ],
 
 tests:[
-    {name:"Математические вопросы",
-    questions:[
-        {question:"2+2",
-            answer:"4"
-        },
-        {question:"2 + 2 * 2",
-        answer:"6"
-        },
-        {question:"x-5 = 0. Найдите x ",
-        answer:"5"
-        },
-        {question:"x * (x - 10) = 0. В ответе запишите меньший из корней",
-        answer:"0"
-        },
-    ],
-    },
-    {name:"Столицы",
-    questions:[
-        {question:"Столица России",
-            answer:"Москва"
-        },
-        {question:"Столица Франции",
-        answer:"Париж"
-        },
-        {question:"Столица Италии",
-        answer:"Рим"
-        },
-        {question:"Столица Бразилии",
-        answer:"Бразилиа"
-        },
-    ],
-    },
-    {name:"Алгебра",
-    questions:[
-        {question:"2x + 4 = 0. Чему равен x?",
-            answer:"-2"
-        },
-        {question:"ctg x = 1. Чему равен tg x?",
-        answer:"1"
-        },
-        {question:"7x + 5x + 4x + 3x + 2x + x = 44. Чему равен x?",
-        answer:"2"
-        },
-        {question:"7x * 2 = 28. Найдите х.",
-        answer:"2"
-        },
-    ],
-    }
 ],
 
 scores:[
@@ -163,11 +115,6 @@ export const reducers = (state = initState, action) => {
              const newScore = action.payload 
              const scores = [...state.scores, newScore];
              return {...state, scores: scores}  
-        case "ADD_TEST" :
-            const newTest = action.payload
-            const tests = [...state.tests, newTest];
-            console.log(tests)
-            return {...state, tests: tests}
         default :
         return state;
     }

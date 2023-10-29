@@ -1,16 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { cn } from '@bem-react/classname'
 import "./Tests.css"
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Tests = () => {
     const cnTests = cn("Tests")
     const dispatch = useDispatch()
     //@ts-ignore
-    const state = useSelector((state) => state.tests)
+    const [state, setState] = useState([{name:'', questions:[]}])
+    /* const state = useSelector((state) => state.tests) */
     //@ts-ignore
     const scores = useSelector((state) => state.scores)
+
+    useEffect(() => {
+        (async () => {
+            const res = await fetch("http://localhost:3001/tests", {
+                method:"GET",
+                headers: {
+                    'Content-Type':'application/json'
+                  }
+            });
+            const data = await res.json()
+            console.log(data)
+            setState(data.tests)
+        })()
+        
+    },[])
 
     const OneTest = (name: string) => {
             //@ts-ignore

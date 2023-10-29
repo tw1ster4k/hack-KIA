@@ -11,7 +11,21 @@ app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(3001, async () => {
+//import routes 
+const TestRoutes = require('./routes/getTests')
+
+const corsOptions = {
+    credentials: true,
+    origin: 'http://localhost:3000',
+  };
+  app.use(cors(corsOptions));
+  
+
+  //routing
+
+  app.use("/", TestRoutes)
+
+    app.listen(3001, async () => {
 
     console.log("Server started!")
 

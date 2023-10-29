@@ -19,20 +19,26 @@ const CreateTest = () => {
     const [answer3, setAnswer3] = useState('')
     const [answer4, setAnswer4] = useState('')
 
-    const submitTest = () => {
+    const submitTest = async () => {
         console.log(answer1, answer2, answer3, answer4)
-        dispatch({type:"ADD_TEST", payload:{name:name, questions:[{question:quest1,answer:answer1
-    }, {
-        question:quest2,answer:answer2  
-    },
-    {
-        question:quest3,answer:answer3
-    },
-    {
-        question:quest4,answer:answer4
-    }
-        ]}})
-        alert('Тест успешно создан!')
+        const res = await fetch('http://localhost:3001/tests/new', {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({name:name, questions:[{question:quest1,answer:answer1
+            }, {
+                question:quest2,answer:answer2  
+            },
+            {
+                question:quest3,answer:answer3
+            },
+            {
+                question:quest4,answer:answer4
+            }
+                ]})
+          })
+          const result = res.json().then((event) => alert(event.info))
         navigate('/tests')
     }
 

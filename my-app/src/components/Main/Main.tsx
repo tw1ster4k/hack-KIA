@@ -9,6 +9,7 @@ const Main = () => {
     const cnMain = cn("Main")
   return (
     <div className={cnMain()}>
+
         <div className={cnMain("Ad")}>
             <h1 className={cnMain("H1")}>Возможность получить новую профессию легко и просто</h1>
             <text className={cnMain("desc")}>персональная онлайн-статистика обучения,
@@ -24,8 +25,22 @@ const Main = () => {
             </Link>
             <text className={cnMain("Reg-Text")}>начни бесплатно уже сейчас</text>
         </div>
-        
-    </div>
+        <div className={cnMain("PreFooter")}>
+            <div className={cnMain("PreFooter-Block")}>
+                <h3 className={cnMain("PreFooter-Title")}>50%</h3>
+                <p className={cnMain("PreFooter-Desc")}>обучение в любое время</p>
+            </div>
+            <div className={cnMain("PreFooter-Block")}>
+                <h3 className={cnMain("PreFooter-Title")}>24/7</h3>
+                <p className={cnMain("PreFooter-Desc")}>постоянный доступ к системе</p>
+            </div>
+            <div className={cnMain("PreFooter-Block")}>
+                <h3 className={cnMain("PreFooter-Title")}>17%</h3>
+                <p className={cnMain("PreFooter-Desc")}>широкий выбор программ</p>
+            </div>
+        </div>
+        </div>
+
   )
 }
 

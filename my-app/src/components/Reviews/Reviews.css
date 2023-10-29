@@ -1,0 +1,79 @@
+.Reviews{
+    background: linear-gradient(180deg, rgba(0, 10, 243, 0.76) 0%, rgba(2, 6, 95, 0.76) 68.75%, rgba(0, 4, 89, 0.76) 99.99%);
+    text-align: center;
+
+}
+
+.Reviews-H1{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #fff;
+}
+
+.Reviews-Content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Reviews-Block{
+    background-color: #fff;
+    height: 170px;
+    width: 370px;
+    border-radius: 15px;
+    margin: 16px;
+}
+
+.Reviews-Name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #02065f;
+}
+
+.Reviews-Desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.Reviews-Form{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Reviews-Form-Title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #02065f;
+}
+
+.Reviews-Input{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #d9d9d9;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+
+.Reviews-Button{
+    height: 35px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    background-color: #02065f;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+}

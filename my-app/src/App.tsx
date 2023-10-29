@@ -13,6 +13,7 @@ import Test from './components/Test/Test';
 import Introduction from './components/Introduction/Introduction';
 import CreateTest from './components/CreateTest/CreateTest';
 import Tarifs from './components/Tarifs/Tarifs';
+import Reviews from './components/Reviews/Reviews';
 
 function App() {
   const cnApp = cn("App")
@@ -40,6 +41,7 @@ function App() {
         <Route element={<Introduction />} path='/intro' />
         <Route element={<CreateTest />} path='/tests/create' />
         <Route element={<Tarifs />} path='/tarifs' />
+        <Route element={<Reviews />} path='/reviews' />
       </Routes>
       <Footer />
     </div>

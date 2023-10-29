@@ -13,7 +13,7 @@ const Footer = () => {
         <Link to={"/"} className={cnFooter("Link")}>Возможности</Link>
         <Link to={"/tarifs"} className={cnFooter("Link")}>Тарифы</Link>
         <Link to={"/intro"} className={cnFooter("Link")}>Внедрение</Link>
-        <Link to={"/"} className={cnFooter("Link")}>Поддержка</Link>
+        <Link to={"/supports"} className={cnFooter("Link")}>Поддержка</Link>
         </div>
         <div className={cnFooter("Form")}>
             <text>оставьте заявку или вопрос</text>

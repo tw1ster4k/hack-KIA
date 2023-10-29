@@ -18,16 +18,27 @@ const Test = () => {
     const state = useSelector((state) => state.test)
     const answers = [answer1, answer2,answer3, answer4]
     
-    const AnswerSubmit = () => {
+    const AnswerSubmit = async () => {
         let score = 0;
         for(let i = 0; i < state.questions.length; i++) {
             if(answers[i].toLowerCase() === state.questions[i].answer.toLowerCase()){
                 score += 1
             }
-        }
-        dispatch({type:"ADD_SCORE", payload:{name: state.name, score: score}})
-        alert(`Вы набрали ${score} из ${state.questions.length}`)
-        navigate('/tests')
+        } 
+        const res = await fetch('http://localhost:3001/score', {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({name: state.name, score: score})
+          })
+          const result = res.json().then((event) => 
+          event.info === "Сохранено!" ?
+          alert(`Вы набрали ${score} из ${state.questions.length}`)
+          :
+          console.log(event)
+          )
+          navigate('/tests')
 
     }
 

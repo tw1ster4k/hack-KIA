@@ -12,7 +12,8 @@ const Tests = () => {
     const [state, setState] = useState([{name:'', questions:[]}])
     /* const state = useSelector((state) => state.tests) */
     //@ts-ignore
-    const scores = useSelector((state) => state.scores)
+ //   const scores = useSelector((state) => state.scores)
+    const [scores, setScores] = useState([{name: "", score: 0}])
 
     useEffect(() => {
         (async () => {
@@ -25,6 +26,7 @@ const Tests = () => {
             const data = await res.json()
             console.log(data)
             setState(data.tests)
+            setScores(data.scores)
         })()
         
     },[])

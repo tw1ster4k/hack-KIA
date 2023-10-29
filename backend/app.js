@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //import routes 
 const TestRoutes = require('./routes/getTests')
+const ScoresRoutes = require("./routes/ScoresRoutes")
 
 const corsOptions = {
     credentials: true,
@@ -24,6 +25,7 @@ const corsOptions = {
   //routing
 
   app.use("/", TestRoutes)
+  app.use('/', ScoresRoutes)
 
     app.listen(3001, async () => {
 

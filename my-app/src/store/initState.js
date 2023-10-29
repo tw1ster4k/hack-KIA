@@ -108,6 +108,38 @@ tests:[
         answer:"0"
         },
     ],
+    },
+    {name:"Столицы",
+    questions:[
+        {question:"Столица России",
+            answer:"Москва"
+        },
+        {question:"Столица Франции",
+        answer:"Париж"
+        },
+        {question:"Столица Италии",
+        answer:"Рим"
+        },
+        {question:"Столица Бразилии",
+        answer:"Бразилиа"
+        },
+    ],
+    },
+    {name:"Алгебра",
+    questions:[
+        {question:"2x + 4 = 0. Чему равен x?",
+            answer:"-2"
+        },
+        {question:"ctg x = 1. Чему равен tg x?",
+        answer:"1"
+        },
+        {question:"7x + 5x + 4x + 3x + 2x + x = 44. Чему равен x?",
+        answer:"2"
+        },
+        {question:"7x * 2 = 28. Найдите х.",
+        answer:"2"
+        },
+    ],
     }
 ],
 
@@ -130,6 +162,7 @@ export const reducers = (state = initState, action) => {
         case "ADD_SCORE" :
              const newScore = action.payload 
              const scores = [...state.scores, newScore];
+             console.log(scores)
              return {...state, scores: scores}  
         default :
         return state;

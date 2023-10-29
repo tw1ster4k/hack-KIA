@@ -27,8 +27,11 @@ const Tests = () => {
                 <div key={index} className={cnTests("Test")} >
                     <h3 className={cnTests("Test-Title")}>{el.name}</h3>
                     <text>
-                        {scores.length > 0 ?
-                        `${el.name === scores[index].name ? scores[index].score : 0} из ${el.questions.length}`
+                        {
+                            //@ts-ignore
+                        scores.filter((e) => e.name === el.name)[0] ?
+                            //@ts-ignore
+                        `${scores.filter((elem) => elem.name === el.name)[0] ? /* scores.filter((elem) => elem.name === el.name)[0] */ scores.filter((elem) => elem.name === el.name)[0].score : 0} из ${el.questions.length}`
                         :
                         ""
                     }

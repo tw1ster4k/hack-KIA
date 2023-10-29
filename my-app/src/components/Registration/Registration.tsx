@@ -4,6 +4,8 @@ import "./Registration.css"
 
 const Registration = () => {
     const cnRegister = cn("Register")
+
+    
   return (
     <div className={cnRegister()}>
         <div className={cnRegister("Container")}>

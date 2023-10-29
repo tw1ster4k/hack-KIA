@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '@bem-react/classname';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
@@ -13,6 +13,17 @@ import Test from './components/Test/Test';
 
 function App() {
   const cnApp = cn("App")
+  const navigate = useNavigate()
+  window.onload = () => {
+    const loaded = sessionStorage.getItem('loaded')
+      if(loaded){
+        console.log("AAAA")
+          navigate('/')
+      }else{
+        //@ts-ignore
+        sessionStorage.setItem('loaded', true)
+      }
+  }
   return (
     <div className={cnApp()}>
       <Header />

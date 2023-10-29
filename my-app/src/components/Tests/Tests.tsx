@@ -1,18 +1,14 @@
 import React, {useState} from 'react'
 import { cn } from '@bem-react/classname'
 import "./Tests.css"
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const Tests = () => {
     const cnTests = cn("Tests")
     const dispatch = useDispatch()
-    //@ts-ignore
     const [state, setState] = useState([{name:'', questions:[]}])
-    /* const state = useSelector((state) => state.tests) */
-    //@ts-ignore
- //   const scores = useSelector((state) => state.scores)
     const [scores, setScores] = useState([{name: "", score: 0}])
 
     useEffect(() => {

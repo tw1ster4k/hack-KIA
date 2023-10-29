@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
 import { cn } from '@bem-react/classname'
 import "./CreateTest.css"
-import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 const CreateTest = () => {
-    const dispatch = useDispatch()
     const navigate = useNavigate()
     const [name, setName] = useState('')
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { cn } from '@bem-react/classname'
 import "./Test.css"
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, } from 'react-redux'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,7 +12,6 @@ const Test = () => {
     const [answer2, setAnswer2] = useState('')
     const [answer3, setAnswer3] = useState('')
     const [answer4, setAnswer4] = useState('')
-    const dispatch = useDispatch()
 
     //@ts-ignore
     const state = useSelector((state) => state.test)

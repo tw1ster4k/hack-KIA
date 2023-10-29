@@ -1,0 +1,47 @@
+.Tarifs{
+    margin-top: 20px;
+    background: linear-gradient(#000af3, #02065FC2 , #000459 );
+    text-align: center;
+}
+
+.Tarifs-H1{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 60.94px;
+    color: #fff;
+}
+
+.Tarifs-Content{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Tarifs-Tarif{
+    width: 252px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Tarifs-Tarif-Header{
+    height: 120px;
+    border-radius: 25px;
+    color: #fff;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Tarifs-Link{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+}

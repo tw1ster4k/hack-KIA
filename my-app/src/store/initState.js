@@ -92,12 +92,6 @@ export const initState = {
     }   
 ],
 
-tests:[
-],
-
-scores:[
-],
-
 test:{
     
 }

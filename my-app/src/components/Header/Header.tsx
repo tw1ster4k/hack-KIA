@@ -16,7 +16,7 @@ const Header = () => {
         <img className={cnHeader("Title")} src={Logo} />
         <Link to={"/"} className={cnHeader("Link")}>Возможности</Link>
         <Link to={"/"} className={cnHeader("Link")}>Тарифы</Link>
-        <Link to={"/"} className={cnHeader("Link")}>Внедрение</Link>
+        <Link to={"/intro"} className={cnHeader("Link")}>Внедрение</Link>
         <Link to={"/"} className={cnHeader("Link")}>Поддержка</Link>
         <Link to={"/tests"} className={cnHeader("Link")}>Тесты</Link>
         { 

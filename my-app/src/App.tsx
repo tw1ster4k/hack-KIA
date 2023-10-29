@@ -10,6 +10,7 @@ import Cabinet from './components/Cabinet/Cabinet';
 import Registration from './components/Registration/Registration';
 import Tests from './components/Tests/Tests';
 import Test from './components/Test/Test';
+import Introduction from './components/Introduction/Introduction';
 
 function App() {
   const cnApp = cn("App")
@@ -34,6 +35,7 @@ function App() {
         <Route element={<Registration />} path='/reg' />
         <Route element={<Tests />} path='/tests' />
         <Route element={<Test />} path='/tests/:id' />
+        <Route element={<Introduction />} path='/intro' />
       </Routes>
       <Footer />
     </div>

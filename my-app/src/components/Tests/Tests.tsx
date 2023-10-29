@@ -20,6 +20,9 @@ const Tests = () => {
   return (
     <div className={cnTests()} >
         <h1 className={cnTests("Title")}>Тесты</h1>
+        <Link to="/tests/create">
+            <button className={cnTests("Button")}>Создать новый тест</button>
+        </Link>
         <div className={cnTests("Container")}>
             {
                 //@ts-ignore
@@ -31,7 +34,7 @@ const Tests = () => {
                             //@ts-ignore
                         scores.filter((e) => e.name === el.name)[0] ?
                             //@ts-ignore
-                        `${scores.filter((elem) => elem.name === el.name)[0] ? /* scores.filter((elem) => elem.name === el.name)[0] */ scores.filter((elem) => elem.name === el.name)[0].score : 0} из ${el.questions.length}`
+                        `Вы набрали ${scores.filter((elem) => elem.name === el.name)[0] ? scores.filter((elem) => elem.name === el.name)[0].score : 0} из ${el.questions.length}`
                         :
                         ""
                     }

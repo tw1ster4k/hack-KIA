@@ -162,8 +162,12 @@ export const reducers = (state = initState, action) => {
         case "ADD_SCORE" :
              const newScore = action.payload 
              const scores = [...state.scores, newScore];
-             console.log(scores)
              return {...state, scores: scores}  
+        case "ADD_TEST" :
+            const newTest = action.payload
+            const tests = [...state.tests, newTest];
+            console.log(tests)
+            return {...state, tests: tests}
         default :
         return state;
     }

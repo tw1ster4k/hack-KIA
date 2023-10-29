@@ -21,7 +21,7 @@ const Test = () => {
     const AnswerSubmit = () => {
         let score = 0;
         for(let i = 0; i < state.questions.length; i++) {
-            if(answers[i] === state.questions[i].answer){
+            if(answers[i].toLowerCase() === state.questions[i].answer.toLowerCase()){
                 score += 1
             }
         }

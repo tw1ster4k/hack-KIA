@@ -39,6 +39,8 @@ const Main = () => {
                 <p className={cnMain("PreFooter-Desc")}>широкий выбор программ</p>
             </div>
         </div>
+            <h3 className={cnMain('Developers')}>Разработчики: Кириллова Кира Сергеевна, Нуршинов Амин Рашидович</h3>
+            <h3 className={cnMain('date')}>© 2025</h3>
         </div>
 
   )

@@ -36,7 +36,6 @@ function App() {
         <Route element={<Main />} path='/' />
         <Route element={<Login />} path='/login' />
         <Route element={<Cabinet />} path='/lk' />
-        <Route element={<Registration />} path='/reg' />
         <Route element={<Tests />} path='/tests' />
         <Route element={<Test />} path='/tests/:id' />
         <Route element={<Introduction />} path='/intro' />

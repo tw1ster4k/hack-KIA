@@ -10,7 +10,7 @@ const Header = () => {
   const state = useSelector((state) => state.user) 
     const cnHeader = cn("Header")
     console.log(state.login)
-    const navItems = state.login ? [{link:"/lk", name:"Личный кабинет"}] : [{link:'/reg', name:"Зарегистрироваться"}, {link:"/login", name:"Вход"}]
+    const navItems = state.login ? [{link:"/lk", name:"Личный кабинет"}] : [{link:"/login", name:"Вход"}]
   return (
     <div className={cnHeader()}>
         <img className={cnHeader("Title")} src={Logo} />
